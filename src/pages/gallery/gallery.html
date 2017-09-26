@@ -1,0 +1,88 @@
+<!--
+  Generated template for the GalleryPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header no-shadow no-border>
+  <ion-navbar color="primary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <about></about>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content parallax-header>
+  <div class="cover header-md">
+    <img class="cover" src="./assets/img/bg_banner.jpg" align="home">
+    <p id="gallery">Gallery amik Al-muslim Tambun ss</p>
+    <p id="tahun">Tahun akademik 2017/2018</p>
+    <p id="come">Come and join us</p>
+  </div>
+  <ion-card id="kutipan" isLiked='false'>
+    <ion-card-content>
+      <p>
+        {{ kutipan?.kutipan }}
+      </p>
+      <p class="suka">{{ kutipan?.liked }} <ion-icon name='ios-thumbs-up'></ion-icon></p>
+      <p text-right>{{ kutipan?.comment.length }} Komentar</p>
+    </ion-card-content>
+
+    <ion-row no-padding>
+      <ion-col>
+        <button ion-button clear small color="dark" id="btn-kutipan" [disabled]="!kutipan?.kutipan" (tap)="likeKutipan(kutipan.liked)" icon-start>
+          <ion-icon name='thumbs-up'></ion-icon>
+          Suka
+        </button>
+      </ion-col>
+      <ion-col text-center>
+        <button ion-button clear small color="dark" (tap)="komentarKutipan()" [disabled]="!kutipan?.kutipan" icon-start>
+          <ion-icon name='chatboxes'></ion-icon>
+          Komentar
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+
+  <ion-card *ngFor="let key of objectKeys(items)" id="{{ key }}" isLiked='false'>
+    <img src="{{ items[key].thumb }}" tappable (tap)="show(items[key].link)" />
+    <ion-card-content>
+      <p>
+        {{ items[key].caption }}
+      </p>
+      <ion-row>
+        <ion-col col-7>
+          <p class="suka">{{ items[key].liked }} <ion-icon name='ios-thumbs-up'></ion-icon></p>
+          <p class="komentar">{{ items[key].comment.length }} Komentar</p>
+        </ion-col>
+        <ion-col col-5 text-right>
+          {{ items[key].date }}
+        </ion-col>
+      </ion-row>
+    </ion-card-content>
+
+    <ion-row no-padding>
+      <ion-col>
+        <button ion-button clear small color="dark" (tap)="like(key, items[key].liked)" icon-start id="btn-{{ key }}">
+          <ion-icon name='thumbs-up'></ion-icon>
+            Suka
+        </button>
+      </ion-col>
+      <ion-col text-center>
+        <button ion-button clear small color="dark" (tap)="komentar(key)" icon-start>
+          <ion-icon name='chatboxes'></ion-icon>
+            Komentar
+        </button>
+      </ion-col>
+    </ion-row>
+  </ion-card>
+
+  <ion-infinite-scroll (ionInfinite)="doInfinite($event)" threshold="15%">
+   <ion-infinite-scroll-content
+     loadingText="Loading more image ...">
+   </ion-infinite-scroll-content>
+ </ion-infinite-scroll>
+
+</ion-content>

@@ -1,0 +1,60 @@
+page-gallery-comment {
+  ion-content {
+    border-radius: 10px;
+  }
+
+  .toolbar-md {
+    min-height: 45px;
+    height: 45px;
+  }
+
+  .toolbar-background-md {
+    background: transparent;
+  }
+
+  ion-label {
+    p {
+      white-space: initial;
+    }
+  }
+
+  ion-header {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    #status {
+      height: 25px; 
+      background: #8E24AA;
+      margin-bottom: 5px;
+      position: relative;
+      z-index: 9999;
+    }
+  }
+
+  ion-footer {
+    background: #FFFFFF;
+  }
+
+  .list-md {
+    .item-md {
+      padding-left: 0;
+    }
+
+    margin-bottom: 35px;
+  }
+
+  #login-as {
+    margin: 0;
+    text-align: center;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    border: 1px solid black;
+    border-radius: 20px;
+  }
+
+  #waktu {
+    text-align: right;
+    color: #000;
+    font-style: italic;
+  }
+}

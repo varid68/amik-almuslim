@@ -1,5 +1,40 @@
 // http://ionicframework.com/docs/theming/
+$roboto-font-path: $font-path !default;
+@font-face {
+  font-family:"BreeSerif-Regular";
+  font-style:normal;
+  font-weight:normal;
+  src:url("#{$roboto-font-path}/BreeSerif-Regular.ttf") format("ttf"), url("#{$roboto-font-path}/BreeSerif-Regular.ttf") format("truetype");
+}
 
+.list-md .item-block .item-inner {
+  border-bottom: none; 
+}
+
+.image-menu {
+  margin-right: 20px;
+}
+
+.indent {
+  text-indent: 3rem;
+}
+
+.menu-label {
+  position: relative;
+  top: -3px;
+}
+
+.opaque {
+  background-color: color($colors, blue) !important;
+
+  &:after {
+    height: 5px !important;
+  }
+
+  .toolbar-background {
+    background-color: color($colors, blue);
+  }
+}
 
 // App Global Sass
 // --------------------------------------------------

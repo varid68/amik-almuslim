@@ -1,0 +1,27 @@
+page-program-studi-tab1 {
+  super-tabs {
+    margin-top: -1px;
+  }
+
+  .card-md {
+    margin: 0;
+    width: 100%;
+
+    &:not(:first-child){
+      margin-top: 10px;
+    }
+
+    .card-content-md {
+      text-align: justify;
+    }
+
+    ul {
+      padding-left: 20px;
+
+      li {
+        font-size: 1.2rem;
+      }
+    }
+  }
+  
+}

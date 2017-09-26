@@ -1,0 +1,27 @@
+page-home-tab2 {
+  .card-md {
+    margin: 0;
+    width: 100%;
+
+    &:not(:first-child){
+      margin-top: 10px;
+    }
+
+    .card-content-md {
+      text-align: justify;
+    }
+
+    ul {
+      padding-left: 10px;
+    }
+
+    ol {
+      padding-left: 0px;
+
+      ul {
+        padding-left:20px;
+      }
+    }
+  }
+  
+}

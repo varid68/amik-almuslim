@@ -1,0 +1,96 @@
+page-gallery {
+  ion-header, .toolbar-background {
+    background-color: initial !important;
+    transition: background-color 0.5s ease;
+    margin-top: 25px;
+
+    &after {
+      height: 0 !important;
+    }
+
+    ion-title {
+      float: left;
+      padding-top:5px;
+    }
+  }
+
+
+  .scroll-content {
+    margin-top: 0!important;
+
+    .header-md {
+      background: color($colors, dark);
+    }
+
+    img.cover {
+      max-width: none;
+      width: 102.5%!important;
+      opacity: 0.3;
+    }
+
+    #gallery {
+      position: absolute;
+      top: 4.5vh;
+      font-size: 1.2em;
+      width: 86%;
+      color: #fff;
+      text-align: left;
+      padding-left: 60px;
+      line-height: 18px;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+    #tahun {
+      position: absolute;
+      top: 7.5vh;
+      font-size: 3rem;
+      width: 100%;
+      font-weight: bold;
+      color: #fff;
+      text-align: center;
+    }
+
+    #come {
+      position: absolute;
+      top: 25vh;
+      font-size: 1.1em;       
+      width: 100%;
+      color: #fff;
+      text-align: center;
+      font-weight: 500;
+      font-style: italic;
+    }
+
+    #kutipan {
+      margin-top: -75px;
+      position: relative;
+    }
+
+    .card-content {
+      padding-bottom: 2px;
+    }
+
+    .suka {
+      display: inline-block;
+      padding-right: 10px;
+      float: left;
+    }
+  }
+
+
+  .opaque {
+    background-color: color($colors, blue) !important;
+
+    &:after {
+      height: 5px !important;
+    }
+
+    .toolbar-background {
+      background-color: color($colors, blue);
+    }
+  }
+
+
+}

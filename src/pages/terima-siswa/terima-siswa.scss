@@ -1,0 +1,48 @@
+page-terima-siswa {  
+  #status {
+    height: 25px; 
+    background: #8E24AA;
+    position: relative;
+    z-index: 9999;
+  }
+
+  ion-navbar {
+    margin-top: -1px;
+  }
+
+  ion-title {
+    float: left;
+    padding-top:5px;
+  }
+  
+  .toolbar-title-md {
+    font-size: 1.8rem;
+  }
+
+  .scroll-content {
+    margin-top: 0px !important;
+
+    #margin-fixer {
+      height: 75px;
+    }
+
+    ul, ol {
+      padding-left: 10px;
+    }
+
+    .row {
+      border-top: 1px solid #eee;
+    }
+
+    .head-table {
+      background-color: #BDBDBD;
+    }
+
+    .col:not(:last-child) {
+      border-right: 1px solid #eee; 
+    }
+  }
+
+
+
+}

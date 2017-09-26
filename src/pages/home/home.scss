@@ -1,3 +1,26 @@
 page-home {
+  super-tabs-toolbar {
+    box-shadow: 0px 1px 10px 0px rgba(0,0,0,0.34);
+  }
 
+  #status {
+    height: 25px; 
+    background: #8E24AA;
+    position: relative;
+    z-index: 9999;
+  }
+
+  ion-navbar {
+    margin-top: -1px;
+  }
+
+  ion-title {
+    float: left;
+    padding-top:5px;
+  }
+
+  super-tabs {
+    margin-top: -1px;
+  }
+  
 }

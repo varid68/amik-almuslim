@@ -38,7 +38,8 @@ $colors: (
   secondary:  #32db64,
   danger:     #f53d3d,
   light:      #f4f4f4,
-  dark:       #222
+  dark:       #222,
+  blue:       #9C27B0
 );
 
 
@@ -52,10 +53,24 @@ $colors: (
 // App Material Design Variables
 // --------------------------------------------------
 // Material Design only Sass variables can go here
+$content-md-padding: 10px;
+$popover-md-width: 50%;
+$font-family-md-base: "BreeSerif-Regular", "Roboto", "Helvetica Neue", sans-serif;
+$alert-md-message-padding-top: 5px;
 
 
+.alert-md .alert-head {
+  padding: 15px 15px 15px 15px !important;
+}
 
+.alert-sub-title {
+  padding-top: 5px !important;
+}
 
+.alert-md .alert-message, .alert-md .alert-input-group {
+  padding-left: 15px !important;
+  padding-bottom: 5px !important;
+}
 // App Windows Variables
 // --------------------------------------------------
 // Windows only Sass variables can go here
