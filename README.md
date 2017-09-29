@@ -35,4 +35,4 @@ Aplikasi ini lebih di tujukan kepada orang yang ingin / akan melanjutkan studi d
 
  ## Download apk
 
-<a href="https://drive.google.com/open?id=0Bxp6Hpy2uQydNmZ1X19PQVd6Slk">Download from Google drive</a>
+<a href="https://drive.google.com/open?id=0Bxp6Hpy2uQydOTZXQVpLQ05XVjA">Download from Google drive</a>
