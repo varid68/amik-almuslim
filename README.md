@@ -26,12 +26,19 @@ Aplikasi ini lebih di tujukan kepada orang yang ingin / akan melanjutkan studi d
       * kemudian buka localhost:8100
 
 
- ## App preview
- <div>
- <img src="https://firebasestorage.googleapis.com/v0/b/ionic2-1afad.appspot.com/o/amik-home.gif?alt=media&token=7f3e44f3-64a2-4c19-bf76-a117ce1b6ec0" height=450/>
- <img src="https://firebasestorage.googleapis.com/v0/b/ionic2-1afad.appspot.com/o/amik-all.gif?alt=media&token=4c749863-1d31-468e-ab22-214effa63f0e" height=450/>
- <img src="https://firebasestorage.googleapis.com/v0/b/ionic2-1afad.appspot.com/o/amik-gallery.gif?alt=media&token=c476b1d1-abdc-4cd1-aeb9-c3c717e78311" height=450/>
-</div>
+ #App preview
+ <table>
+  <tr>
+    <td>Home Page</td>
+    <td>Fasilitas Page</td>
+    <td>Gallery Amik</td>
+  </tr>
+  <tr>
+    <td><img src="https://firebasestorage.googleapis.com/v0/b/ionic2-1afad.appspot.com/o/amik-home.gif?alt=media&token=7f3e44f3-64a2-4c19-bf76-a117ce1b6ec0" height=450/></td>
+    <td><img src="https://firebasestorage.googleapis.com/v0/b/ionic2-1afad.appspot.com/o/amik-all.gif?alt=media&token=4c749863-1d31-468e-ab22-214effa63f0e" height=450/></td>
+    <td><img src="https://firebasestorage.googleapis.com/v0/b/ionic2-1afad.appspot.com/o/amik-gallery.gif?alt=media&token=c476b1d1-abdc-4cd1-aeb9-c3c717e78311" height=450/></td>
+  </tr>
+</table>
 
  ## Download apk
 
