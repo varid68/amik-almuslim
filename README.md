@@ -26,7 +26,7 @@ Aplikasi ini lebih di tujukan kepada orang yang ingin / akan melanjutkan studi d
       * kemudian buka localhost:8100
 
 
- #App preview
+ ## App preview
  <table>
   <tr>
     <td>Home Page</td>
